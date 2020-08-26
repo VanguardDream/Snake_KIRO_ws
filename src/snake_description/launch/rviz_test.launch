@@ -1,0 +1,11 @@
+<launch>
+    <param name="robot_description" command="$(find xacro)/xacro --inorder '$(find snake_description)/urdf/quadnake_ver_leg.urdf'"/>
+
+    <node name="joint_state_publisher"    pkg="joint_state_publisher_gui"    type="joint_state_publisher_gui">
+        <param name="use_gui" value="TRUE"/>
+    </node>
+
+    <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher"/>
+
+    <node name="rviz" pkg="rviz" type="rviz" args="$(find snake_description)/launch/qd_leg.rviz"/>
+</launch>

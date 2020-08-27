@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.5.1-0-g916b5db  Build Version: 1.5.7152.31018
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="KIRO">
+  <link
+    name="base_link">
+    <inertial>
+      <origin
+        xyz="-0.000109879233031458 -0.0273088702358897 0.00140285890991659"
+        rpy="0 0 0" />
+      <mass
+        value="0.535967429358411" />
+      <inertia
+        ixx="0.00018757527249678"
+        ixy="-1.36420193056114E-06"
+        ixz="1.35315601073952E-06"
+        iyy="0.000215013107922381"
+        iyz="2.08401192305764E-06"
+        izz="0.000191626545093877" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/base_link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.898039215686275 0.917647058823529 0.929411764705882 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/base_link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="Link1">
+    <inertial>
+      <origin
+        xyz="0.000734125604276688 0.0339615937302256 -0.00027721284516874"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600223661665" />
+      <inertia
+        ixx="1.47890360644745E-05"
+        ixy="-5.99821568832737E-07"
+        ixz="6.40439016115362E-09"
+        iyy="1.95533162261517E-05"
+        iyz="2.00399458630214E-07"
+        izz="1.71909694524591E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link1.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link1.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint1"
+    type="continuous">
+    <origin
+      xyz="0 0 -0.113000000000001"
+      rpy="-1.57079632679489 -0.0772621439601535 -1.0435629807297" />
+    <parent
+      link="base_link" />
+    <child
+      link="Link1" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link2">
+    <inertial>
+      <origin
+        xyz="0.000734124835237347 0.0339615995546394 -0.000277210406241546"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600360967291" />
+      <inertia
+        ixx="1.47890401324031E-05"
+        ixy="-5.9982101504777E-07"
+        ixz="6.4000962733409E-09"
+        iyy="1.95533050730814E-05"
+        iyz="2.00396704002686E-07"
+        izz="1.71909685773196E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link2.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link2.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint2"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000189 0"
+      rpy="1.57079632679495 -1.31778628107313 -1.57079632679494" />
+    <parent
+      link="Link1" />
+    <child
+      link="Link2" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link3">
+    <inertial>
+      <origin
+        xyz="0.00073413 0.033962 -0.00027722"
+        rpy="0 0 0" />
+      <mass
+        value="0.06866" />
+      <inertia
+        ixx="1.4789E-05"
+        ixy="-5.9983E-07"
+        ixz="6.4044E-09"
+        iyy="1.9553E-05"
+        iyz="2.004E-07"
+        izz="1.7191E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link3.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link3.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint3"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000196 0"
+      rpy="1.57079632679625 -1.5204383118262 -1.57079632679623" />
+    <parent
+      link="Link2" />
+    <child
+      link="Link3" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link4">
+    <inertial>
+      <origin
+        xyz="0.000734102291367708 0.0339615907259536 -0.000277185985289414"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686599998180761" />
+      <inertia
+        ixx="1.47889932945206E-05"
+        ixy="-5.99803725898958E-07"
+        ixz="6.37079797503265E-09"
+        iyy="1.95532393373651E-05"
+        iyz="2.00371775239531E-07"
+        izz="1.71909178697556E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link4.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link4.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint4"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000194 0"
+      rpy="-1.57079632679781 -1.55773054333023 1.57079632679782" />
+    <parent
+      link="Link3" />
+    <child
+      link="Link4" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link5">
+    <inertial>
+      <origin
+        xyz="0.00073413 0.033962 -0.00027707"
+        rpy="0 0 0" />
+      <mass
+        value="0.06866" />
+      <inertia
+        ixx="1.4789E-05"
+        ixy="-5.9978E-07"
+        ixz="6.3759E-09"
+        iyy="1.9553E-05"
+        iyz="2.0037E-07"
+        izz="1.7191E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link5.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link5.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint5"
+    type="continuous">
+    <origin
+      xyz="0 0.0709 0"
+      rpy="-1.5708 -1.4011 1.5708" />
+    <parent
+      link="Link4" />
+    <child
+      link="Link5" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link6">
+    <inertial>
+      <origin
+        xyz="0.000734121647180418 0.0339616020799494 -0.00027720650204778"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600224648355" />
+      <inertia
+        ixx="1.47890298052589E-05"
+        ixy="-5.99816393681554E-07"
+        ixz="6.39776086770646E-09"
+        iyy="1.95532947382719E-05"
+        iyz="2.00393059010949E-07"
+        izz="1.7190961679167E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link6.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link6.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint6"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000198 0"
+      rpy="1.57079632680039 -1.56352047508035 -1.57079632680039" />
+    <parent
+      link="Link5" />
+    <child
+      link="Link6" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link7">
+    <inertial>
+      <origin
+        xyz="0.000734105241670668 0.0339616012654268 -0.000277185770423141"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600087497741" />
+      <inertia
+        ixx="1.47889972194598E-05"
+        ixy="-5.99799704160611E-07"
+        ixz="6.36797027690917E-09"
+        iyy="1.95532346062942E-05"
+        iyz="2.00367928985413E-07"
+        izz="1.71909190774697E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link7.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link7.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint7"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000198 0"
+      rpy="1.57079632679524 -1.4470645233056 -1.57079632679523" />
+    <parent
+      link="Link6" />
+    <child
+      link="Link7" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link8">
+    <inertial>
+      <origin
+        xyz="0.00073410336979033 0.0339615960387173 -0.000277187238657828"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600132332047" />
+      <inertia
+        ixx="1.4788996995665E-05"
+        ixy="-5.99801563083696E-07"
+        ixz="6.3685773458714E-09"
+        iyy="1.95532412371813E-05"
+        iyz="2.00372346686037E-07"
+        izz="1.71909192884505E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link8.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link8.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint8"
+    type="continuous">
+    <origin
+      xyz="0 0.0709 0"
+      rpy="1.5708 -1.5581 -1.5708" />
+    <parent
+      link="Link7" />
+    <child
+      link="Link8" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link9">
+    <inertial>
+      <origin
+        xyz="0.0007341 0.033962 -0.00027719"
+        rpy="0 0 0" />
+      <mass
+        value="0.06866" />
+      <inertia
+        ixx="1.4789E-05"
+        ixy="-5.998E-07"
+        ixz="6.3709E-09"
+        iyy="1.9553E-05"
+        iyz="2.0037E-07"
+        izz="1.7191E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link9.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link9.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint9"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000196 0"
+      rpy="-1.57079632679513 -1.30057923463469 1.57079632679515" />
+    <parent
+      link="Link8" />
+    <child
+      link="Link9" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link10">
+    <inertial>
+      <origin
+        xyz="0.00073411 0.033962 -0.00027718"
+        rpy="0 0 0" />
+      <mass
+        value="0.06866" />
+      <inertia
+        ixx="1.4789E-05"
+        ixy="-5.998E-07"
+        ixz="6.3708E-09"
+        iyy="1.9553E-05"
+        iyz="2.0037E-07"
+        izz="1.7191E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link10.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link10.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint10"
+    type="continuous">
+    <origin
+      xyz="0 0.0709 0"
+      rpy="1.5708 -1.5171 -1.5708" />
+    <parent
+      link="Link9" />
+    <child
+      link="Link10" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link11">
+    <inertial>
+      <origin
+        xyz="0.000734101471230653 0.0339616492224692 -0.000277153493034157"
+        rpy="0 0 0" />
+      <mass
+        value="0.0686600714160146" />
+      <inertia
+        ixx="1.47889426670961E-05"
+        ixy="-5.99782884909375E-07"
+        ixz="6.3776478039867E-09"
+        iyy="1.95533984339972E-05"
+        iyz="2.00371123281093E-07"
+        izz="1.71910183460482E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link11.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link11.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint11"
+    type="continuous">
+    <origin
+      xyz="0 0.0709000000000197 0"
+      rpy="1.57079632679513 -1.4040632316503 -1.57079632679513" />
+    <parent
+      link="Link10" />
+    <child
+      link="Link11" />
+    <axis
+      xyz="0 0 1" />
+  </joint>
+  <link
+    name="Link12">
+    <inertial>
+      <origin
+        xyz="0.00039841 0.02432 4.0407E-05"
+        rpy="0 0 0" />
+      <mass
+        value="0.14122" />
+      <inertia
+        ixx="3.4502E-05"
+        ixy="-6.136E-07"
+        ixz="-1.9723E-08"
+        iyy="3.4326E-05"
+        iyz="-5.1614E-08"
+        izz="3.072E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link12.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.89804 0.91765 0.92941 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://snake_description/meshes/KIRO/Link12.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Joint12"
+    type="continuous">
+    <origin
+      xyz="0 0.0709 0"
+      rpy="-0.099824 0 0" />
+    <parent
+      link="Link11" />
+    <child
+      link="Link12" />
+    <axis
+      xyz="1 0 0" />
+  </joint>
+</robot>
